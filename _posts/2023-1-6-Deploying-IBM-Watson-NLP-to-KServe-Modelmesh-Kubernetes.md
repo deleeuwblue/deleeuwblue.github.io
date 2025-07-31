@@ -186,7 +186,7 @@ watson-nlp-runtime              watson-nlp    watson-nlp-runtime   7s
 
 ## Upload a pre-trained Watson NLP model to Cloud Object Storage
 
-The next step is to upload a model to object storage.  Watson NLP provides pre-trained models as containers, which are usually run as init containers to copy their data to a volume shared with the watson-nlp-runtime, see [Deployments to Kubernetes using yaml files or helm charts]({% post_url 2023-1-5-Deploying-IBM-Watson-NLP-to-Kubernetes %}).  When using Modelmesh, the goal is to copy the model data to COS.  To achieve this, we can run the model container as a k8s Job, where the model container is configured to write to COS instead of a local volume mount.
+The next step is to upload a model to object storage.  Watson NLP provides pre-trained models as containers, which are usually run as init containers to copy their data to a volume shared with the watson-nlp-runtime, see [Deployments to Kubernetes using yaml files or helm charts](https://deleeuw.me.uk).  When using Modelmesh, the goal is to copy the model data to COS.  To achieve this, we can run the model container as a k8s Job, where the model container is configured to write to COS instead of a local volume mount.
 
 An example [Job](https://github.com/deleeuwblue/watson-embed-demos/blob/main/nlp/modelmesh-serving/job.yaml) is provided which launches the model container for the [Syntax model](https://www.ibm.com/docs/en/watson-libraries?topic=catalog-syntax).  The `env` variables which configure the model container to copy its data to COS, referencing the credentials from the `localMinIO` section of the `storage-config` secret, which is mounted as a volume.
 

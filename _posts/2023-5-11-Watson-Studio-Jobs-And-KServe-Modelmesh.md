@@ -10,7 +10,7 @@ It's easy to use Watson NLP Library for Embed to include AI into your applicatio
 
 In many cases, the training data for a model might change over time, requiring model retraining.  In this blog, I present a simple approach which combines automation in Watson Studio to build a new model, with KServe Modelmesh to seamlessly update the deployed NLP API.
 
-For initial context, read my blogs [Introducing IBM Watson for Embed]({% post_url 2023-1-2-Introducing-IBM-Watson-for-Embed %}) and [Deploying IBM Watson NLP to Kubernetes using KServe Modelmesh]({% post_url 2023-1-6-Deploying-IBM-Watson-NLP-to-KServe-Modelmesh-Kubernetes %}).
+For initial context, read my blogs [Introducing IBM Watson for Embed]((https://deleeuw.me.uk) and [Deploying IBM Watson NLP to Kubernetes using KServe Modelmesh](https://deleeuw.me.uk).
 
 ## Automation
 
@@ -98,9 +98,9 @@ Patch the `storage-config` secret so it can reference the COS on IBM Cloud, in a
 kubectl patch secret storage-config -n modelmesh-serving -p='{"stringData":{"ibmCOS":"{\n  \"type\": \"s3\",\n  \"access_key_id\": \"<YOUR ACCESS KEY>\",\n  \"secret_access_key\": \"<YOUR SECRET ACCESS KEY>\",\n  \"endpoint_url\": \"https://s3.eu-gb.cloud-object-storage.appdomain.cloud\",\n  \"default_bucket\": \"<YOUR BUCKET NAME>\",\n  \"region\": \"en-gb\"\n}\n"}}'
 ```
 
-Follow the steps **Create a Pull Secret and ServiceAccount** from [Deploying IBM Watson NLP to Kubernetes using KServe Modelmesh]({% post_url 2023-1-6-Deploying-IBM-Watson-NLP-to-KServe-Modelmesh-Kubernetes %})
+Follow the steps **Create a Pull Secret and ServiceAccount** from [Deploying IBM Watson NLP to Kubernetes using KServe Modelmesh](https://deleeuw.me.uk)
 
-Follow the steps **Configure a ServingRuntime for Watson NLP** from [Deploying IBM Watson NLP to Kubernetes using KServe Modelmesh]({% post_url 2023-1-6-Deploying-IBM-Watson-NLP-to-KServe-Modelmesh-Kubernetes %})
+Follow the steps **Configure a ServingRuntime for Watson NLP** from [Deploying IBM Watson NLP to Kubernetes using KServe Modelmesh](https://deleeuw.me.uk)
 
 Finally, an InferenceService CR needs to be created to make the model available via the watson-nlp Serving Runtime that we already created.  This resource defines the location for model `ensemble_model.zip` in the COS bucket used by the Watson Studio project.  Note, the notebook must save the model with a zip extension.
 
