@@ -8,9 +8,9 @@ image: https://raw.githubusercontent.com/deleeuwblue/deleeuwblue.github.io/main/
 
 In this blog, I will demonstrate how to deploy the Watson for NLP Library to Kubernetes using KServe Modelmesh.
 
-For initial context, read my blog [introducing IBM Watson for Embed]({% post_url 2023-1-2-Introducing-IBM-Watson-for-Embed %}).
+For initial context, read my blog [introducing IBM Watson for Embed](https://deleeuw.me.uk).
 
-For deployment to OpenShift, see this [blog]({% post_url 2023-1-6-Deploying-IBM-Watson-NLP-to-KServe-Modelmesh-OpenShift %}).
+For deployment to OpenShift, see this [blog](https://deleeuw.me.uk).
 
 ## Introducing KServe
 

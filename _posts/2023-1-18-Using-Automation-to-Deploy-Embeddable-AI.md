@@ -5,7 +5,7 @@ categories:
 tags:
 image: https://raw.githubusercontent.com/deleeuwblue/deleeuwblue.github.io/main/assets/img/2023-1-18-Using-Automation-to-Deploy-Embeddable-AI/terraformArgoSmall3.png
 ---
-In a previous blog [introducing IBM Watson for Embed]({% post_url 2023-1-2-Introducing-IBM-Watson-for-Embed %}), I introduced the IBM Watson Libraries for Embed.  They provide a common framework to help ISVs embed AI including natural language processing (NLP) and speech into their solutions.
+In a previous blog [introducing IBM Watson for Embed]((https://deleeuw.me.uk), I introduced the IBM Watson Libraries for Embed.  They provide a common framework to help ISVs embed AI including natural language processing (NLP) and speech into their solutions.
 
 The Watson Libraries are shipped as containers which can be run standalone for testing and learning, but when it's time for a more scalable environment, it's likely you'll want to deploy to a Kubernetes platform.  Further more, if you're frequently creating and destroying environments (i.e. for POCs, demos, production etc), then you can benefit from 'Everything as Code' automation using the IBM TechZone Deployer, which is the focus of this blog.
 

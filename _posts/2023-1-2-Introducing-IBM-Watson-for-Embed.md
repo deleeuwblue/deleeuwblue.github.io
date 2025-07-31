@@ -18,9 +18,9 @@ To try IBM Watson for Embed, a [trial](https://www.ibm.com/account/reg/uk-en/sig
 
 The following options are available to deploy Watson NLP:
 
-* [Locally using container engines like Docker or Podman]({% post_url 2023-1-3-Running-IBM-Watson-NLP-locally-in-Containers %})
+* [Locally using container engines like Docker or Podman](https://deleeuw.me.uk)
 * Deployments to Kubernetes using Minikube
-* [Deployments to Kubernetes using yaml files or helm charts]({% post_url 2023-1-5-Deploying-IBM-Watson-NLP-to-Kubernetes %})
-* [Deployments to Kubernetes using KServe ModelMesh Serving]({% post_url 2023-1-6-Deploying-IBM-Watson-NLP-to-KServe-Modelmesh-Kubernetes %})
+* [Deployments to Kubernetes using yaml files or helm charts](https://deleeuw.me.uk)
+* [Deployments to Kubernetes using KServe ModelMesh Serving](https://deleeuw.me.uk)
 * [Deployments to OpenShift via TechZone Deployer using Terraform and ArgoCD](https://github.com/IBM/watson-automation)
 

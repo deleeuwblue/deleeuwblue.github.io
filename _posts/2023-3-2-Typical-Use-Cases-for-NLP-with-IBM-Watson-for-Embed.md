@@ -152,6 +152,6 @@ The Watson NLP libraries are available in processing environments for Watson Stu
 
 When you're ready to deploy a pre-trained or custom trained model, you can deploy it with the watson-nlp-runtime container. This provides a stable API for the NLP capabilities described, regardless of the algorithm used to train the model. Please refer to my other blogs for more details of how to package and deploy models as containers:
 
-* [Locally using container engines like Docker or Podman]({% post_url 2023-1-3-Running-IBM-Watson-NLP-locally-in-Containers %})
-* [Deployments to Kubernetes using yaml files or helm charts]({% post_url 2023-1-5-Deploying-IBM-Watson-NLP-to-Kubernetes %})
-* [Deployments to Kubernetes using KServe ModelMesh Serving]({% post_url 2023-1-6-Deploying-IBM-Watson-NLP-to-KServe-Modelmesh-Kubernetes %})
+* [Locally using container engines like Docker or Podman]((https://deleeuw.me.uk)
+* [Deployments to Kubernetes using yaml files or helm charts](https://deleeuw.me.uk)
+* [Deployments to Kubernetes using KServe ModelMesh Serving](https://deleeuw.me.uk)
