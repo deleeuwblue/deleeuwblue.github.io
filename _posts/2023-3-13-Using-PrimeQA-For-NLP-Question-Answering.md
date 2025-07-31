@@ -3,7 +3,7 @@ title: Using PrimeQA For NLP Question Answering
 date: 2023-03-13 09:00:00 +/-0000
 categories: [IBM Watson for Embed, General Information]
 tags: [ai, nlp]     # TAG names should always be lowercase
-image: https://raw.githubusercontent.com/deleeuwblue/deleeuwblog/main/assets/img/2023-3-13-Using-PrimeQA-For-NLP-Question-Answering/qamainimage.png
+image: https://raw.githubusercontent.com/deleeuwblue/deleeuwblue.github.io/main/assets/img/2023-3-13-Using-PrimeQA-For-NLP-Question-Answering/qamainimage.png
 ---
 Question Answering models are one of the mainstays of NLP. In this blog I demonstrate how to use the open-source project [PrimeQA](https://github.com/primeqa) to install a framework which indexes data, and provides a Q&A capability which can easy be incorporated into an application.
 

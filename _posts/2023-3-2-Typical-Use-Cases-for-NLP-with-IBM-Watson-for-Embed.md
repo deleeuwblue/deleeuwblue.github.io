@@ -3,7 +3,7 @@ title: NLP Capabilities with Watson NLP Library for Embed
 date: 2023-03-03 09:00:00 +/-0000
 categories: [IBM Watson for Embed, General Information]
 tags: [ai, nlp]     # TAG names should always be lowercase
-image: https://raw.githubusercontent.com/deleeuwblue/deleeuwblog/main/assets/img/2023-3-2-Typical-Use-Cases-for-NLP-with-IBM-Watson-for-Embed/waves.png
+image: https://raw.githubusercontent.com/deleeuwblue/deleeuwblue.github.io/main/assets/img/2023-3-2-Typical-Use-Cases-for-NLP-with-IBM-Watson-for-Embed/waves.png
 ---
 
 What are the basics of NLP? What are the specific NLP capabilities that can be achieved with Watson NLP Library for Embed? Find out more in this blog.

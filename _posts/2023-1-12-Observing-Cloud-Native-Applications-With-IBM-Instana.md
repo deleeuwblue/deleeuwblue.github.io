@@ -3,7 +3,7 @@ title: Observing Cloud Native Applications With IBM Instana
 date: 2023-01-12 09:00:00 +/-0000
 categories: [IBM Instana, cloud native]
 tags: [aiops, apm, cloudnative]     # TAG names should always be lowercase
-image: https://raw.githubusercontent.com/deleeuwblue/deleeuwblog/main/assets/img/2023-1-12-Observing-Cloud-Native-Applications-With-IBM-Instana/robotshop.png
+image: https://raw.githubusercontent.com/deleeuwblue/deleeuwblue.github.io/main/assets/img/2023-1-12-Observing-Cloud-Native-Applications-With-IBM-Instana/robotshop.png
 ---
 
 Instana provides a real-time, automated Enterprise Observability Platform that helps Site Reliability Engineers improve the reliability and resiliency of cloud-native applications.  For initial context, read my previous blog [Introducing IBM Instana Observability]({{ site.baseurl }}/Introducing-IBM-Instana-Observability).

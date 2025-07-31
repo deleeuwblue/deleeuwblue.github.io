@@ -3,7 +3,7 @@ title: Deploying IBM Watson NLP to Kubernetes using KServe Modelmesh
 date: 2023-01-06 09:00:00 +/-0000
 categories: [IBM Watson for Embed, NLP]
 tags: [ai, nlp, kubernetes, kserve]     # TAG names should always be lowercase
-image: https://raw.githubusercontent.com/deleeuwblue/deleeuwblog/main/assets/img/2023-1-6-Deploying-IBM-Watson-NLP-to-KServe-Modelmesh-OpenShift/mesh.png
+image: https://raw.githubusercontent.com/deleeuwblue/deleeuwblue.github.io/main/assets/img/2023-1-6-Deploying-IBM-Watson-NLP-to-KServe-Modelmesh-OpenShift/mesh.png
 ---
 
 In this blog, I will demonstrate how to deploy the Watson for NLP Library to Kubernetes using KServe Modelmesh.

@@ -3,7 +3,7 @@ title: Deploying IBM Watson NLP to OpenShift using KServe Modelmesh
 date: 2023-01-06 09:00:00 +/-0000
 categories: [IBM Watson for Embed, NLP]
 tags: [ai, nlp, kubernetes, openshift, kserve]     # TAG names should always be lowercase
-image: https://raw.githubusercontent.com/deleeuwblue/deleeuwblog/main/assets/img/2023-1-6-Deploying-IBM-Watson-NLP-to-KServe-Modelmesh-OpenShift/mesh.png
+image: https://raw.githubusercontent.com/deleeuwblue/deleeuwblue.github.io/main/assets/img/2023-1-6-Deploying-IBM-Watson-NLP-to-KServe-Modelmesh-OpenShift/mesh.png
 ---
 
 In this blog, I will demonstrate how to deploy the Watson for NLP Library to OpenShift using KServe Modelmesh.
@@ -159,7 +159,7 @@ For example:
 
 In the minio GUI, click the red '+' button (located bottom right) to add a bucket named `modelmesh-example-models`
 
-![minIOGUI](https://raw.githubusercontent.com/deleeuwblue/deleeuwblog/main/assets/img/2023-1-6-Deploying-IBM-Watson-NLP-to-KServe-Modelmesh-OpenShift/minioGUI.png)
+![minIOGUI](https://raw.githubusercontent.com/deleeuwblue/deleeuwblue.github.io/main/assets/img/2023-1-6-Deploying-IBM-Watson-NLP-to-KServe-Modelmesh-OpenShift/minioGUI.png)
 
 Creating this bucket is a workaround and is not required when using the [quick start install script](https://github.com/kserve/modelmesh-serving/blob/release-0.9/docs/quickstart.md) with Kubernetes.  The minio container deployed by the quick start includes a default directory `/data1`, which is pre-populated with a bucket `modelmesh-example-models` containing some default models for pytorch, sklearn, tensorflow etc.
 
@@ -317,7 +317,7 @@ oc apply -f watson-embed-demos/nlp/modelmesh-serving/job.yaml
 
 The minio GUI shows the uploaded model data:
 
-![minIOModelUploaded](https://raw.githubusercontent.com/deleeuwblue/deleeuwblog/main/assets/img/2023-1-6-Deploying-IBM-Watson-NLP-to-KServe-Modelmesh-OpenShift/minioModelUploaded.png)
+![minIOModelUploaded](https://raw.githubusercontent.com/deleeuwblue/deleeuwblue.github.io/main/assets/img/2023-1-6-Deploying-IBM-Watson-NLP-to-KServe-Modelmesh-OpenShift/minioModelUploaded.png)
 
 
 ## Create a InferenceService for the Syntax model

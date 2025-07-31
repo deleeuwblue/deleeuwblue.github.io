@@ -3,7 +3,7 @@ title: Combining Watson Studio Jobs with KServe Modelmesh
 date: 2023-05-11 09:00:00 +/-0000
 categories: [IBM Watson Embed]
 tags: [watsonnlp, classifier, watsonstudio, kservemodelmesh]     # TAG names should always be lowercase
-image: https://raw.githubusercontent.com/deleeuwblue/deleeuwblog/main/assets/img/2023-5-11-Watson-Studio-Jobs-And-KServe-Modelmesh/city.jpg
+image: https://raw.githubusercontent.com/deleeuwblue/deleeuwblue.github.io/main/assets/img/2023-5-11-Watson-Studio-Jobs-And-KServe-Modelmesh/city.jpg
 ---
 
 It's easy to use Watson NLP Library for Embed to include AI into your applications.  Watson NLP provides both pre-trained models, or your can use the python wrappers to train your own models with Watson Studio, using a choice of algorithms.  In addition, KServe Modelmesh is a standard model inference platform on k8s.  It is built for highly scalable use cases and supports both Watson NLP and existing third party model servers with standard ML/DL model formats.
