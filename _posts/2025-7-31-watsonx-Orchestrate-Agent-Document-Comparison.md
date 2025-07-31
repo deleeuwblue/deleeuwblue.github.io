@@ -2,7 +2,7 @@
 title: watsonx Orchestrate Agent for Document Comparison
 date: 2025-07-31 09:00:00 +/-0000
 layout: post
-author: adamdeleeuw
+author: [adamdeleeuw, brianinnes]
 ---
 
 ## Introduction to wxo - ADAM
