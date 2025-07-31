@@ -1,0 +1,15 @@
+## Template › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/advanced-usage.md#setting-author-url
+# -------------------------------------
+# {author_id}:
+#   name: {full name}
+#   twitter: {twitter_of_author}
+#   url: {homepage_of_author}
+# -------------------------------------
+
+adamdeleeuw:
+  name: Adam de Leeuw
+  url: https://www.linkedin.com/in/deleeuwa
+
+brianinnes:
+  name: Brian Innes
+  url: https://www.linkedin.com/in/binnes
