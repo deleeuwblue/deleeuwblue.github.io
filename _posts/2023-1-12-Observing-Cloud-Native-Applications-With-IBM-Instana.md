@@ -1,8 +1,8 @@
 ---
 title: Observing Cloud Native Applications With IBM Instana
 date: 2023-01-12 09:00:00 +/-0000
-categories: [IBM Instana, cloud native]
-tags: [aiops, apm, cloudnative]     # TAG names should always be lowercase
+categories:
+tags:
 image: https://raw.githubusercontent.com/deleeuwblue/deleeuwblue.github.io/main/assets/img/2023-1-12-Observing-Cloud-Native-Applications-With-IBM-Instana/robotshop.png
 ---
 

@@ -1,8 +1,8 @@
 ---
 title: NLP Capabilities with Watson NLP Library for Embed
 date: 2023-03-03 09:00:00 +/-0000
-categories: [IBM Watson for Embed, General Information]
-tags: [ai, nlp]     # TAG names should always be lowercase
+categories:
+tags:
 image: https://raw.githubusercontent.com/deleeuwblue/deleeuwblue.github.io/main/assets/img/2023-3-2-Typical-Use-Cases-for-NLP-with-IBM-Watson-for-Embed/waves.png
 ---
 

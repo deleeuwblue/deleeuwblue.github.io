@@ -1,8 +1,8 @@
 ---
 title: Combining Watson Studio Jobs with KServe Modelmesh
 date: 2023-05-11 09:00:00 +/-0000
-categories: [IBM Watson Embed]
-tags: [watsonnlp, classifier, watsonstudio, kservemodelmesh]     # TAG names should always be lowercase
+categories:
+tags:
 image: https://raw.githubusercontent.com/deleeuwblue/deleeuwblue.github.io/main/assets/img/2023-5-11-Watson-Studio-Jobs-And-KServe-Modelmesh/city.jpg
 ---
 
