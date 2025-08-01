@@ -7,7 +7,7 @@ image: https://raw.githubusercontent.com/deleeuwblue/deleeuwblog/main/assets/img
 
 In this blog, I will demonstrate how to run the Watson for NLP Library locally using containers with Docker.
 
-For initial context, read my blog [introducing IBM Watson for Embed]({{ site.baseurl }}/Introducing-IBM-Watson-for-Embed)
+For initial context, read my blog [Introducing IBM Watson for Embed]
 
 ## Select Models
 
