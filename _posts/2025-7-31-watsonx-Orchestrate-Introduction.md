@@ -50,4 +50,3 @@ Agents - add from catalo, local instance, import external agent
 
 ## Assistants
 
-![assistant](/assets/img/2025-7-31-watsonx-Orchestrate-Introduction.md/assistant.png)
