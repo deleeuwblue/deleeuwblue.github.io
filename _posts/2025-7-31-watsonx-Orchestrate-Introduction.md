@@ -34,9 +34,17 @@ An agent can be defined using the watsonx Orchestrate no-code Agent Builder, or 
 
 ## Catalog
 
+![catalog](/assets/img/2025-7-31-watsonx-Orchestrate-Introduction.md/catalog.png)
+
 ## Agents & tools
 
+Tools - add from catalog, local instance, import external tool, create new flow
+
+Agents - add from catalo, local instance, import external agent
+
 ## Flows
+
+![flow](/assets/img/2025-7-31-watsonx-Orchestrate-Introduction.md/flow.png)
 
 ## Agent Developer Kit
 
