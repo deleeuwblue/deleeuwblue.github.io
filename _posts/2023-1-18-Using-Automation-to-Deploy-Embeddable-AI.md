@@ -2,7 +2,7 @@
 title: Using Automation to Deploy Embeddable AI to Kubernetes
 date: 2023-01-18 09:00:00 +/-0000
 layout: post
-image: https://raw.githubusercontent.com/deleeuwblue/deleeuwblog/main/assets/img/2023-1-18-Using-Automation-to-Deploy-Embeddable-AI/terraformArgoSmall3.png
+image: /assets/img/2023-1-18-Using-Automation-to-Deploy-Embeddable-AI/terraformArgoSmall3.png
 ---
 In a previous blog [introducing IBM Watson for Embed], I introduced the IBM Watson Libraries for Embed.  They provide a common framework to help ISVs embed AI including natural language processing (NLP) and speech into their solutions.
 
