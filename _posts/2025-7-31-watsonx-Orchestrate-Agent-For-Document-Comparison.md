@@ -6,11 +6,18 @@ author: [adamdeleeuw, brianinnes]
 image: /assets/img/2025-7-31-watsonx-Orchestrate-Agent-Document-Comparison/watsonxassistant_lifecycle_1x1_16x9.jpeg
 ---
 
-## Introduction to wxo - ADAM
+## Introduction
 
-What it's for. What changed on July 30. Main components (Agents, tools, flows). Now it's truly agentic.
-Mention ADK docs.
-Mention SaaS docs.
+This short series of articles provides an introduction to the latest incarnation of watsonx Orchestrate, which has recently been redesigned for all new deployments from July 2025.
+
+[watson Orchestrate Introduction] covers the key components for building an agent, including defining the agent's purpose, knowledge, tools, flows and behaviour.
+
+[watson Orchestrate Agent Development Toolkit] explains how to install a development environment for local agent development and testing.
+
+This post provides an end to end example of building an agent with tools.
+
+Finally, [watson Orchestrate Publish from ADK to SaaS] shows how to publish a locally developed agent to a watson Orchestrate SaaS tenant, and how users can interact with it.
+
 
 ## Use Case - Document Comparison Task - BRIAN
 
@@ -22,13 +29,6 @@ Simple document structure in this blog. Coding standards.
 
 Describe the services SaaS tenant / ADK tools required.
 Block diagram of solution.
-
-## Orchestrate Development Lifecyle - BRIAN
-
-Link to another blog for setup of ADK
-    Install ADK - link to docs, but summarise key steps.
-    .env file etc
-    Langfuse
 
 ## Building Tool - ADAM
 
@@ -47,8 +47,4 @@ Upload to local dev.
 Use Chat UI
 In future, we'll talk more about debugging / evaluation.
 
-## Publish to SaaS Tenant - ADAM
-
-In future, we'll talk about deploying to a SaaS tenant
-and, alternative UI interfaces (webchat client, REST API)
 
