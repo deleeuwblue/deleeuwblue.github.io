@@ -7,10 +7,10 @@ image: https://raw.githubusercontent.com/deleeuwblue/deleeuwblog/main/assets/img
 
 In this blog, I will demonstrate how to deploy the Watson for NLP Library to OpenShift using KServe Modelmesh.
 
-For initial context, read my blog [introducing IBM Watson for Embed]({{"/article/2023-1-2-Introducing-IBM-Watson-for-Embed" | relative_url }}).
+For initial context, read my blog [introducing IBM Watson for Embed]({{"/posts/2023-1-2-Introducing-IBM-Watson-for-Embed" | relative_url }}).
 
 
-For deployment to Kubernetes, see this [blog]({{"/article/2023-1-6-Deploying-IBM-Watson-NLP-to-KServe-Modelmesh-Kubernetes" | relative_url }}).
+For deployment to Kubernetes, see this [blog]({{"/posts/2023-1-6-Deploying-IBM-Watson-NLP-to-KServe-Modelmesh-Kubernetes" | relative_url }}).
 
 
 ## Introducing KServe
@@ -273,7 +273,7 @@ watson-nlp-runtime              watson-nlp    watson-nlp-runtime   7s
 
 ## Upload a pretrained Watson NLP model to Cloud Object Storage
 
-The next step is to upload a model to object storage.  Watson NLP provides pre-trained models as containers, which are usually run as init containers to copy their data to a volume shared with the watson-nlp-runtime, see [Deployments to Kubernetes using yaml files or helm charts]({{"/article/2023-1-5-Deploying-IBM-Watson-NLP-to-Kubernetes" | relative_url }}).  When using Modelmesh, the goal is to copy the model data to COS.  To achieve this, we can run the model container as a k8s Job, where the model container is configured to write to COS instead of a local volume mount.
+The next step is to upload a model to object storage.  Watson NLP provides pre-trained models as containers, which are usually run as init containers to copy their data to a volume shared with the watson-nlp-runtime, see [Deployments to Kubernetes using yaml files or helm charts]({{"/posts/2023-1-5-Deploying-IBM-Watson-NLP-to-Kubernetes" | relative_url }}).  When using Modelmesh, the goal is to copy the model data to COS.  To achieve this, we can run the model container as a k8s Job, where the model container is configured to write to COS instead of a local volume mount.
 
 An example [Job](https://github.com/deleeuwblue/watson-embed-demos/blob/main/nlp/modelmesh-serving/job.yaml) is provided which launches the model container for the [Syntax model](https://www.ibm.com/docs/en/watson-libraries?topic=catalog-syntax).  The `env` variables which configure the model container to copy its data to COS, referencing the credentials from the `localMinIO` section of the `storage-config` secret, which is mounted as a volume.
 
