@@ -22,13 +22,13 @@ If you've looked at watsonx Orchestrate in the past, you will find it has evolve
 An agent can be defined using the watsonx Orchestrate no-code Agent Builder, or via a declarative approach (yaml file) using the watsonx Agent Developer Tool. An agent is is defined by:
 
 * A model - foundation models (including LLMs) provide the capabilities for agent to plan, and execute tasks. You can select from the third-party and IBM models hosted on watsonx.ai, or you can connect to models hosted by other providers using a gateway.
-* An agent style - how the agent will follow its instructions and behave during tasks. The following styles are provided:
+* An agent style - how the agent will follow its instructions and behave during tasks. The following styles can be selected:
     * Default - uses the built in reasoning capabilities of the LLM to understand your prompt, determine the best action and make use of tools.
     * ReAct (Reasoning and Acting) - an iterative loop where the agent thinks, acts, and observes continuously.
     * Planner - the agent emphasizes upfront planning followed by stepwise execution.
 * Profile - describes what the agent does so other people and other agents know when to use it.
 * Knowledge - uploading documents allows the agent follow a RAG pattern. A limited number of documents can uploaded via watsonx Orchestrate, and they are indexed to an in-memory vector database. Alternatively, the agent can connect to dedicated vectors databases such as Milvus, Elasticsearch or others.
-* Toolset - tools and agent can be added to help the agent take actions. The difference between tools and agents is really down to granularity. A tool might be a fine grained service which calls a single API, whereas an agent would be more coarse grained, providing a capability which involves logic and several APIs. This is not a new concept to IT architects!
+* Toolset - tools and agent can be added to help the agent take actions. The difference between tools and agents is really down to granularity. A tool might be a fine grained service which calls a single API that could be reused by multiple agents, whereas an agent would be a more coarse grained 'module'. This is not a new concept to IT architects!
 * Behaviour - defines how the agent should react to requests, what its purpose is, what tools it should use and how it should respond.
 * Channels - watson Orchestrate provides a web chat UI, but the agent can also be connected to other channels such as Teams, Facebook messenger etc.
 
