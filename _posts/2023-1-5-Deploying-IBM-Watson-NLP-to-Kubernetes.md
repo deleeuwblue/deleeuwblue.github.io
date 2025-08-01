@@ -7,7 +7,7 @@ image: https://raw.githubusercontent.com/deleeuwblue/deleeuwblog/main/assets/img
 
 In this blog, I will demonstrate how to deploy the Watson for NLP Library to OpenShift using either [Kubernetes resources in yaml files](#deployments-using-kubernetes-resources), or using a [helm chart](#deployments-using-a-helm-chart).
 
-For initial context, read my blog [introducing IBM Watson for Embed]({{ site.baseurl }}/Introducing-IBM-Watson-for-Embed)
+For initial context, read my blog [introducing IBM Watson for Embed]
 
 The IBM Watson for NLP Library comprises two components:
 
@@ -60,7 +60,7 @@ The defines the networking to access the watson-nlp-runtime container on ports 8
 
 * A pull secret
 
-IBM deliver these container images via a registry (cp.icr.io) which requires authentication.  See my blog about [running Watson NLP locally]({{ site.baseurl }}/Running-IBM-Watson-NLP-locally-in-Containers) for details of how to register for a trial key. 
+IBM deliver these container images via a registry (cp.icr.io) which requires authentication.  See my blog about [running Watson NLP locally] for details of how to register for a trial key. 
 
 Create the Secret:
 
