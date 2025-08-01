@@ -1,8 +1,7 @@
 ---
 title: Running IBM Watson NLP locally in Containers
 date: 2023-01-01 09:00:00 +/-0000
-categories: [IBM Watson for Embed, NLP]
-tags: [ai, nlp, containers]     # TAG names should always be lowercase
+layout: post
 image: https://raw.githubusercontent.com/deleeuwblue/deleeuwblog/main/assets/img/2023-1-3-Running-IBM-Watson-NLP-locally-in-Containers/aiEmbed1.png
 ---
 

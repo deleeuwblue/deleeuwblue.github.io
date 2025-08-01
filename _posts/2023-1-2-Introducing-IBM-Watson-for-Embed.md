@@ -1,8 +1,7 @@
 ---
 title: Introducing IBM Watson for Embed
 date: 2023-01-01 09:00:00 +/-0000
-categories: [IBM Watson for Embed, General Information]
-tags: [ai, nlp]     # TAG names should always be lowercase
+layout: post
 image: https://raw.githubusercontent.com/deleeuwblue/deleeuwblog/main/assets/img/2023-1-2-Introducing-IBM-Watson-for-Embed/embeddableAIHand.png
 ---
 
