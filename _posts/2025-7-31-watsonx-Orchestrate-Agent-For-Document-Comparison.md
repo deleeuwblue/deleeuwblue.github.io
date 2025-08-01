@@ -10,7 +10,9 @@ image: /assets/img/2025-7-31-watsonx-Orchestrate-Agent-Document-Comparison/watso
 
 This short series of articles provides an introduction to the latest incarnation of watsonx Orchestrate, which has recently been redesigned for all new deployments from July 2025.
 
-[watson Orchestrate Introduction] covers the key components for building an agent, including defining the agent's purpose, knowledge, tools, flows and behaviour.
+
+
+[watson Orchestrate Introduction]({{ "/posts/2025-7-31-watsonx-Orchestrate-Introduction/" | relative_url }}) covers the key components for building an agent, including defining the agent's purpose, knowledge, tools, flows and behaviour.
 
 [watson Orchestrate Agent Development Toolkit] explains how to install a development environment for local agent development and testing.
 
