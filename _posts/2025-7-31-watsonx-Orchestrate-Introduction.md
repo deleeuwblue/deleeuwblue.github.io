@@ -17,7 +17,7 @@ If you've looked at watsonx Orchestrate in the past, you will find it has evolve
 
 ## The Anatomy of an Agent
 
-![anatomyOfAnAgent](/assets/img/2025-7-31-watsonx-Orchestrate-Introduction.md/anatomyOfAnAgent.png)
+![anatomyOfAnAgent](/assets/img/2025-7-31-watsonx-Orchestrate-Introduction.md/anatomyOfAnAgent-sml.png)
 
 An agent can be defined using the watsonx Orchestrate no-code Agent Builder, or via a declarative approach (yaml file) using the watsonx Agent Developer Tool. An agent is is defined by:
 
