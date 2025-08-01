@@ -12,7 +12,7 @@ This short series of articles provides an introduction to the latest incarnation
 
 
 
-[watson Orchestrate Introduction]({{ "/posts/2025-7-31-watsonx-Orchestrate-Introduction/" | relative_url }}) covers the key components for building an agent, including defining the agent's purpose, knowledge, tools, flows and behaviour.
+[watson Orchestrate Introduction](https://deleeuw.me.uk/posts/2025-7-31-watsonx-Orchestrate-Introduction/) covers the key components for building an agent, including defining the agent's purpose, knowledge, tools, flows and behaviour.
 
 [watson Orchestrate Agent Development Toolkit] explains how to install a development environment for local agent development and testing.
 
