@@ -47,11 +47,15 @@ When building an agent, tools can be added from a number of sources:
 * Local Instance - tools that have been created in the ADK, i.e. Python based tools, and uploaded to watsonx Orchestrate
 * External tool from OpenAPI - upload an OpenAOI specification and select the operations to import as a tool. 
 ![openAPISpec](/assets/img/2025-7-31-watsonx-Orchestrate-Introduction.md/openAPISpec.png)
-![openAPISpec](/assets/img/2025-7-31-watsonx-Orchestrate-Introduction.md/importOpenAPISpec.png)
-![openAPISpec](/assets/img/2025-7-31-watsonx-Orchestrate-Introduction.md/addedTools1.png)
+![importOpenAPISpec](/assets/img/2025-7-31-watsonx-Orchestrate-Introduction.md/importOpenAPISpec.png)
+![addedTools1](/assets/img/2025-7-31-watsonx-Orchestrate-Introduction.md/addedTools1.png)
 A clear and detailed tool description helps the AI agent understand when to use the tool, what inputs are required, and how to interpret the output. The description is imported from the OpenAPI specification but can be edited later.
-![openAPISpec](/assets/img/2025-7-31-watsonx-Orchestrate-Introduction.md/toolDescription.png)
-* External tool from an Model Context Protocol (MCP) server - use the MCP open standard to allow allow agents to interact with external tools and data sources through MCP servers. Typically, MCP servers are found in GitHub repositories, for example https://github.com/appcypher/awesome-mcp-servers. The documentation will provide the command to start the MCP server with a simple command, for example ```npx -y time-mcp```. In this example, the npx command directly executes a published JavaScript package ```time-mcp``` without installing it. watsonx Orchestrate supports the installation and execution of Node and Python MCP servers, typically servers that use the npx and uvx commands. Once the MCP server is running, it's tools can be added to the agent.
+![toolDescription](/assets/img/2025-7-31-watsonx-Orchestrate-Introduction.md/toolDescription.png)
+* External tool from an Model Context Protocol (MCP) server - use the MCP open standard to allow allow agents to interact with external tools and data sources through MCP servers. Typically, MCP servers are found in GitHub repositories, for example https://github.com/appcypher/awesome-mcp-servers. The documentation will provide the command to start the MCP server with a simple command, for example ```npx -y time-mcp```. 
+![addTimeMCPServer2](/assets/img/2025-7-31-watsonx-Orchestrate-Introduction.md/addTimeMCPServer2.png)
+In this example, the npx command directly executes a published JavaScript package ```time-mcp``` without installing it. watsonx Orchestrate supports the installation and execution of Node and Python MCP servers, typically servers that use the npx and uvx commands. Once the MCP server is running, it's tools can be added to the agent.
+![addMCPTools2](/assets/img/2025-7-31-watsonx-Orchestrate-Introduction.md/addMCPTools2.png)
+![addedTools2](/assets/img/2025-7-31-watsonx-Orchestrate-Introduction.md/addedTools2.png)
 * Flows - a set of linked activities, e.g. tools and code blocks, wired together in a pre-determined order. See [Flows](#flows) section for more details.
 
 ## Agents
