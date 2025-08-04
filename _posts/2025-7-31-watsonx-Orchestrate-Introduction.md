@@ -36,7 +36,21 @@ An agent can be defined using the watsonx Orchestrate no-code Agent Builder, or 
 
 ![catalog](/assets/img/2025-7-31-watsonx-Orchestrate-Introduction.md/catalog.png)
 
+The IBM watsonx Orchestrate Catalog provides a collection of prebuilt agents and tools to support a wide variety of business functions. At the time of writing there are over 100 agents and 400 tools. The main categories are HR, IT, Procurement, Productivity and Sales. An example of an agent is 'Salesforce Account Management' and example tools would be 'Creating leads in Salesforce', 'Creating opportunities in Salesforce' etc.
+
+
 ## Agents & tools
+
+When building an agent, tools can be added from a number of sources:
+
+Tools Catalog - the pre-built tools mentioned above
+Local Instance - tools that have been created in the ADK, e.g. Python based tools, and uploaded to watsonx Orchestrate
+Flows - a set of linked activities, e.g. tools and code blocks, wired together in a pre-determined order. See below for more details.
+External tool from OpenAPI - upload an OpenAOI specification and select the operations to import as a tool. A clear and detailed tool description helps the AI agent understand when to use the tool, what inputs are required, and how to interpret the output. The description is imported from the OpenAPI specification but can be edited later.
+
+
+
+External tool from an Model Context Protocol (MCP) server - use the MCP open standard to allow allow agents to interact with external tools and data sources through MCP servers. Typically, MCP servers are found in GitHub repositories, for example https://github.com/appcypher/awesome-mcp-servers. The documentation will provide the command to start the MCP server with a simple command, for example ```npx -y time-mcp```. In this example, the npx command directly executes a published JavaScript package ```time-mcp``` without installing it. watsonx Orchestrate supports the installation and execution of Node and Python MCP servers, typically servers that use the npx and uvx commands. Once the MCP server is running, it's tools can be added to the agent.
 
 Tools - add from catalog, local instance, import external tool, create new flow
 
