@@ -75,7 +75,23 @@ When building an agent, collaborator agents can be added from a number of source
 
 ## Flows
 
+A flow defines a set of linked nodes that are designed to achieve a specific goal. In many cases, while it is technically possible to provide an agent with the necessary tools and let it make it's own plan, this isn't the best approach if the sequence of steps is entirely deterministic. 
 ![flow](/assets/img/2025-7-31-watsonx-Orchestrate-Introduction.md/flow.png)
+A flow has a start and end node, and the following components can be added to the sequence:
+
+* Tools - tools from the local instance can be added to the flow
+* Flow controls - provide conditional logic including branches, and coming soon loops and parallel activities.
+* Code block - execute Python code using pre-defined imported libraries.
+* User activity - capture additional input from the user with chat.
+* Document classifier - coming soon.
+* Decision - coming soon. Likely to provide capabilities to make decision based on tabular data.
+* Document extractor - coming soon. Likely to provide OCR capabilities to extract data from documents using LLM prompts or field locations.
+* Generative prompts - coming soon. Likely to provide capabilities to call any LLM accessible via watsonx.ai.
+![flow](/assets/img/2025-7-31-watsonx-Orchestrate-Introduction.md/flowNodesComingSoon.png)
+Flows also define input and output data. The input fields can be marked as required which ensure the agent will prompt for a value before invoking the flow.
+![flow](/assets/img/2025-7-31-watsonx-Orchestrate-Introduction.md/flowInputsAndDescription.png)
+Nodes in the flow might require data. This can be mapped from either the flow inputs, or upstream nodes. Data mapping can happen automatically using AI, or can be manually defined using an expression language. 
+
 
 
 
