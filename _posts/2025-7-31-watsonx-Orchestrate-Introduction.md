@@ -43,7 +43,7 @@ The IBM watsonx Orchestrate Catalog provides a collection of prebuilt agents and
 
 When building an agent, tools can be added from a number of sources:
 
-* Tools Catalog - the pre-built tools mentioned above
+* Tools Catalog - the pre-built tools described in section [Catalog](#catalog)
 * Local Instance - tools that have been created in the ADK, i.e. Python based tools, and uploaded to watsonx Orchestrate
 * External tool from OpenAPI - upload an OpenAOI specification and select the operations to import as a tool. 
 ![openAPISpec](/assets/img/2025-7-31-watsonx-Orchestrate-Introduction.md/openAPISpec.png)
@@ -60,9 +60,11 @@ In this example, the npx command directly executes a published JavaScript packag
 
 ## Agents
 
-When building an agent, tools can be added from a number of sources:
+When building an agent, collaborator agents can be added from a number of sources:
 
-Agents - add from catalo, local instance, import external agent
+* Agent Catalog - the pre-built agents described in section [Catalog](#catalog)
+
+, local instance, import external agent
 
 ## Flows
 
