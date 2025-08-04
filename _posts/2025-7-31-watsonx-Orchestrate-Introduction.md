@@ -14,6 +14,7 @@ If you've looked at watsonx Orchestrate in the past, you will find it has evolve
 
 * Deterministic - A human defined flow sequences the tools and other agents required using repeatable logic to fulfil a user’s request more predictably.
 
+watsonx Orchestrate provides a low-code approach to defining agents. It is complimented by an Agent Development Toolkit (ADK) which is more developer focused, see blog [watsonx Orchestrate Agent Development Toolkit](https://deleeuw.me.uk/posts/watsonx-Orchestrate-Agent-Development-Toolkit/)
 
 ## The Anatomy of an Agent
 
@@ -38,13 +39,12 @@ An agent can be defined using the watsonx Orchestrate no-code Agent Builder, or 
 
 The IBM watsonx Orchestrate Catalog provides a collection of prebuilt agents and tools to support a wide variety of business functions. At the time of writing there are over 100 agents and 400 tools. The main categories are HR, IT, Procurement, Productivity and Sales. An example of an agent is 'Salesforce Account Management' and example tools would be 'Creating leads in Salesforce', 'Creating opportunities in Salesforce' etc.
 
-
 ## Tools
 
 When building an agent, tools can be added from a number of sources:
 
-* Tools Catalog - the pre-built tools described in section [Catalog](#catalog)
-* Local Instance - tools that have been created in the ADK, i.e. Python based tools, and uploaded to watsonx Orchestrate
+* Tools catalog - the pre-built tools described in section [Catalog](#catalog)
+* Local instance - tools that have been created in the ADK, i.e. Python based tools, and uploaded to watsonx Orchestrate
 * External tool from OpenAPI - upload an OpenAOI specification and select the operations to import as a tool. 
 ![openAPISpec](/assets/img/2025-7-31-watsonx-Orchestrate-Introduction.md/openAPISpec.png)
 ![importOpenAPISpec](/assets/img/2025-7-31-watsonx-Orchestrate-Introduction.md/importOpenAPISpec.png)
@@ -62,17 +62,21 @@ In this example, the npx command directly executes a published JavaScript packag
 
 When building an agent, collaborator agents can be added from a number of sources:
 
-* Agent Catalog - the pre-built agents described in section [Catalog](#catalog)
+* Agent catalog - the pre-built agents described in section [Catalog](#catalog)
+* Local instance - any agent already created in the watsonx Orchestrate instance
+* External agent from third-party platforms - add a connection to an agent which follows the [Agent Connect Framework (ACF)](https://connect.watson-orchestrate.ibm.com/acf/overview). ACF defines standard interfaces and communication patterns for agents to interact with each other and with the watsonx Orchestrate platform. It follows the [OpenAI API](https://platform.openai.com/docs/api-reference/chat) ```v1/chat/completions``` which has become the de-facto standard. The ACF specification is openly documented and can be implemented by anyone. Note that IBM also provides the similarly titled [Agent Connect](https://connect.watson-orchestrate.ibm.com/agent-connect/overview) which is a partner program designed to help ISVs integrate their agents with watsonx Orchestrate, using the aforementioned ACF specification.
+* External agent via A2A - this protocol also allows external agents to be added, but it can only be configured by the watsonx Orchestrate ADK. This is similar to the ACF approach mentioned above.
+* External agent from watsonx.ai - IBM's watsonx.ai not only provides LLMs, it also serves as a runtime platform for machine learning models, Python deployments, and more recently, agents using it's [AgentLab](https://dataplatform.cloud.ibm.com/docs/content/wsj/analyze-data/fm-agent-lab.html?context=wx&pos=2) feature. It has a more pro-code approach to watsonx Orchestrate, and has the flexibility to host agents implemented in common AI agent frameworks, currently limited to LangGraph.
+![externalAgents](/assets/img/2025-7-31-watsonx-Orchestrate-Introduction.md/externalAgents.png)
+* watsonx Orchestrate assistants - if you're familiar with watsonx Assistant, you'll know it is well established with capabilities to create virtual assistants which follow a prescribed flow. Such virtual assistants often follow a prescribed flow defined using ```Actions``` triggered by example intents, and while they can appear 'intelligent' and use AI features like RAG, they are not agentic. watson Orchestrate now includes the capabilities of watsonx Assistant. If a virtual assistant can handle some of the tasks an agent requires, it can be developed as an assistant and added to the agent.
+* watsonx Assistant assistants - watsonx Assistant is still available as a stand-alone offering, and these external assistants can be added to the agent.
 
-, local instance, import external agent
+![assistant](/assets/img/2025-7-31-watsonx-Orchestrate-Introduction.md/assistant.png)
 
 ## Flows
 
 ![flow](/assets/img/2025-7-31-watsonx-Orchestrate-Introduction.md/flow.png)
 
-## Agent Developer Kit
 
-## Assistants
 
-![assistant](/assets/img/2025-7-31-watsonx-Orchestrate-Introduction.md/assistant.png)
 
