@@ -42,7 +42,7 @@ The IBM watsonx Orchestrate Catalog provides a collection of prebuilt agents and
 
 When building an agent, tools can be added from a number of sources:
 
-* Tools catalog - the pre-built tools described in section [Catalog](#catalog).
+* Tools catalog - the pre-built tools described previously in section [Catalog](#catalog).
 * Local instance - tools that have been created in the ADK, i.e. Python based tools, and uploaded to watsonx Orchestrate
 * External tool from OpenAPI - upload an OpenAPI specification and select the operations to import as a tool. 
 ![openAPISpec](/assets/img/2025-7-31-watsonx-Orchestrate-Introduction.md/openAPISpec.png)
@@ -61,14 +61,14 @@ In this example, the npx command directly executes a published JavaScript packag
 
 When building an agent, collaborator agents can be added from a number of sources:
 
-* Agent catalog - the pre-built agents described in section [Catalog](#catalog).
+* Agent catalog - the pre-built agents described previously in section [Catalog](#catalog).
 * Local instance - any agent already created in the watsonx Orchestrate instance.
-* External agent from third-party platforms - add a connection to an agent which follows the [Agent Connect Framework (ACF)](https://connect.watson-orchestrate.ibm.com/acf/overview). ACF defines standard interfaces and communication patterns for agents to interact with each other and with the watsonx Orchestrate platform. It follows the [OpenAI API](https://platform.openai.com/docs/api-reference/chat) ```v1/chat/completions``` which has become the de-facto standard. The ACF specification is openly documented and can be implemented by anyone. Note that IBM also provides the similarly titled [Agent Connect](https://connect.watson-orchestrate.ibm.com/agent-connect/overview) which is a partner program designed to help ISVs integrate their agents with watsonx Orchestrate, using the aforementioned ACF specification.
-* External agent via A2A - this protocol also allows external agents to be added, but A2A agents can only be configured by the watsonx Orchestrate ADK. This is similar to the ACF approach mentioned above.
-* External agent from watsonx.ai - IBM's watsonx.ai not only provides LLMs, it also serves as a runtime platform for machine learning models, Python deployments, and more recently, agents using its [AgentLab](https://dataplatform.cloud.ibm.com/docs/content/wsj/analyze-data/fm-agent-lab.html?context=wx&pos=2) feature. AgentLab has a more pro-code approach to watsonx Orchestrate, and includes the flexibility to build and host agents implemented in common AI agent frameworks, currently limited to LangGraph.
+* External agent from third-party platforms - add a connection to an agent which follows the [Agent Connect Framework (ACF)](https://connect.watson-orchestrate.ibm.com/acf/overview). ACF defines standard interfaces and communication patterns for agents to interact with each other, and with the watsonx Orchestrate platform. It mirrors [OpenAI API](https://platform.openai.com/docs/api-reference/chat) ```v1/chat/completions``` which has become a de-facto standard. The ACF specification is openly documented and can be implemented by anyone. Note that IBM also provides the similarly titled [Agent Connect](https://connect.watson-orchestrate.ibm.com/agent-connect/overview) which is a partner program designed to help ISVs integrate their agents with watsonx Orchestrate, using the aforementioned ACF specification.
+* External agent via A2A - this protocol also allows external agents to be added. A2A agents can only be configured by the watsonx Orchestrate ADK. This is similar to the ACF approach mentioned above.
+* External agent from watsonx.ai - IBM's watsonx.ai not only provides LLMs, it also serves as a runtime platform for machine learning models, Python deployments, and more recently, agents using its [AgentLab](https://dataplatform.cloud.ibm.com/docs/content/wsj/analyze-data/fm-agent-lab.html?context=wx&pos=2) feature. AgentLab has a more pro-code approach and includes the flexibility to build and host agents implemented in common AI agent frameworks, currently limited to LangGraph.
 ![externalAgents](/assets/img/2025-7-31-watsonx-Orchestrate-Introduction.md/externalAgents.png)
 * watsonx Orchestrate assistants - if you're familiar with watsonx Assistant, you'll know it is well established with capabilities to create virtual assistants which follow a prescribed flow. Such virtual assistants are defined using ```Actions``` and triggered by example intents. While they can appear 'intelligent' and use AI features like RAG, they are not agentic. watsonx Orchestrate now includes the capabilities of watsonx Assistant. If a virtual assistant can adequately handle a particular task, it can be developed as an assistant and added to the agent.
-* watsonx Assistant assistants - watsonx Assistant is still available as a stand-alone offering, and these external assistants can also be added to the agent.
+* watsonx Assistant assistants - watsonx Assistant is still available as a stand-alone offering, and these external assistants can also be connected to the agent.
 ![assistant](/assets/img/2025-7-31-watsonx-Orchestrate-Introduction.md/assistant.png)
 
 ## Flows
