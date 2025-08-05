@@ -60,6 +60,8 @@ The ADK offers some capabilities that are not available in the web UI :
 
 The developer edition has monitoring capability that can be enabled by adding command line options to the `orchestrate start` command.  There is `-l` or `--with-langfuse` to use langfuse or `-i` or `--with-ibm-telemetry` to use IBM's native obsercability framework.  Only one of these switches can be used but they provide an additional web user interface where the behaviour of agents can be inspected.  
 
+![Langfuse example](/assets/img/2025-7-31-watsonx-Orchestrate-Agent-Development-Toolkit/langfuse.png)
+
 These monitoring capabilities can provide insight into how your agentic applications are working.  What data is being passed from agent to agent or agent to tool so you can debug and tune your applications to deliver the required functionality.
 
 ### Staying up to date
