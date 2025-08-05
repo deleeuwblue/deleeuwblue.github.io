@@ -5,7 +5,7 @@ layout: post
 author: [adamdeleeuw, brianinnes]
 image: /assets/img/2025-7-31-watsonx-Orchestrate-Agent-Document-Comparison/watsonxassistant_lifecycle_1x1_16x9.jpeg
 ---
-[watsonx Orchestrate Agent Development Toolkit](https://deleeuw.me.uk/posts/watsonx-Orchestrate-Agent-Development-Toolkit/) provides tools to locally develop and test agents, tools and flows. When it's time to provide completed agents to your users, a runtime instance of watsonx Orchestrate is required. This blog briefly describes the watsonx Orchestrate deployment options, and how to publish from the Agent Development Toolkit.
+[watsonx Orchestrate Agent Development Toolkit](https://deleeuw.me.uk/posts/watsonx-Orchestrate-Agent-Development-Toolkit/) is used to locally develop and test agents, tools and flows. When it's time to provide completed agents to end users, a runtime instance of watsonx Orchestrate is required. This blog briefly describes the watsonx Orchestrate deployment options, and how to publish from the Agent Development Toolkit.
 
 ## Deployment
 
