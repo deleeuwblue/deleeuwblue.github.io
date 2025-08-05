@@ -14,7 +14,7 @@ If you've looked at watsonx Orchestrate in the past, you will find it has evolve
 
 * Deterministic - A human defined flow sequences the tools and activities required using repeatable logic to fulfil a user’s request more predictably.
 
-watsonx Orchestrate provides a low-code approach to defining agents. It is complimented by an Agent Development Toolkit (ADK) which is more developer focused, see blog [watsonx Orchestrate Agent Development Toolkit](https://deleeuw.me.uk/posts/watsonx-Orchestrate-Agent-Development-Toolkit/)
+watsonx Orchestrate provides a low-code approach to defining agents. It is complimented by an Agent Development Kit (ADK) which is more developer focused, see blog [watsonx Orchestrate Agent Development Kit](https://deleeuw.me.uk/posts/watsonx-Orchestrate-Agent-Development-Toolkit/)
 
 ## The Anatomy of an Agent
 
