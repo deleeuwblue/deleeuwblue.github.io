@@ -1,5 +1,5 @@
 ---
-title: watsonx Orchestrate Agent Development Toolkit
+title: watsonx Orchestrate Agent Development Kit
 date: 2025-07-31 09:02:00 +/-0000
 layout: post
 author: [adamdeleeuw, brianinnes]
@@ -12,7 +12,7 @@ As we've seen in the previous blogs in this series you can develop an Orchestrat
 
 Working in the UI does not allow a more structured, change controlled development practice that many enterprises require.
 
-The [IBM watsonx Orchestrate Agent Deelopment Kit](https://developer.watson-orchestrate.ibm.com) (ADK) is a toolkit that allows you to develop and test Agentic applications.  There are 2 primary parts to the ADK:
+The [IBM watsonx Orchestrate Agent Development Kit](https://developer.watson-orchestrate.ibm.com) (ADK) is a toolkit that allows you to develop and test Agentic applications.  There are 2 primary parts to the ADK:
 
 - the Command Line Interface (CLI)
 - the watsonx Orchestrate Developer Edition

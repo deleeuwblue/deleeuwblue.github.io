@@ -46,7 +46,7 @@ Deployed agents will appear in the list via the Chat screen, which is also used 
 
 End users can access the watsonx Orchestrate agents via a variety of channels including web, Teams or Slack. For example, the webChat UI can be embedded into a website. Use the following ADK CLI command to generate the a script tag:
 
-```
+```sh
 orchestrate channels webchat embed --agent-name=test_agent1
 ```
 
@@ -55,7 +55,7 @@ Paste the resulting script tag between <head></head> elements of a HTML file.
 
 The JavaScript is intended to be hosted via a webserver and may not work if you try to load it directly from the filesystem using a browser (depending on the browser's security restrictions). A fail-safe way to test is to launch a local webserver, for example:
 
-```
+```sh
 cd <path-to-html-folder>
 python3 -m http.server 1996
 ```
