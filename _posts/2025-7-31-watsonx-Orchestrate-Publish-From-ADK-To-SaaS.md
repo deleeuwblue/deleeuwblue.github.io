@@ -32,8 +32,9 @@ Agents and tools can be exported from the ADK to the production watsonx Orchestr
 
 Once deployed to the production watsonx Orchestrate environment, the agent will be in draft. It can be further tested via the Agent Builder UI.
 ![draftAgent](/assets/img/2025-7-31-watsonx-Orchestrate-Publish-From-ADK-To-SaaS/draftAgent.png)
-To make it available to users via the chat UI or other channels, the agent needs to be deployed:
-https://www.ibm.com/docs/en/watsonx/watson-orchestrate/base?topic=agents-deploying-agent
+
+To make it available to users, the agent needs to be deployed to 'live':
+[https://www.ibm.com/docs/en/watsonx/watson-orchestrate/base?topic=agents-deploying-agent](https://www.ibm.com/docs/en/watsonx/watson-orchestrate/base?topic=agents-deploying-agent)
 
 During deployment you are reminded to check the connections to any external applications used by the agent and its tools (the agent in the image below does not use any external connections):
 ![deployAgent](/assets/img/2025-7-31-watsonx-Orchestrate-Publish-From-ADK-To-SaaS/deployAgent.png)
