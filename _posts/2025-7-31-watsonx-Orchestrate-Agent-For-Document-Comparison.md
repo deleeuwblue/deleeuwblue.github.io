@@ -165,6 +165,8 @@ This approach is certainly more deterministic, but at the time of writing, requi
 
 The agent builder provides a preview for testing the agent:
 
+![testingAgent](/assets/img/2025-7-31-watsonx-Orchestrate-Agent-Document-Comparison/testingAgent.png)
+
 ## Publish to a Production Environment
 
-Please see blog [watsonx Orchestrate Publish from ADK to SaaS](https://deleeuw.me.uk/posts/watsonx-Orchestrate-Publish-From-ADK-To-SaaS) for an overview of production deployments publication from ADK.
+Please see blog [watsonx Orchestrate Publish from ADK to SaaS](https://deleeuw.me.uk/posts/watsonx-Orchestrate-Publish-From-ADK-To-SaaS) for an overview of how to progress from ADK to a production deployment.
