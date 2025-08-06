@@ -9,7 +9,7 @@ In this blog, I will demonstrate how to deploy the Watson for NLP Library to Kub
 
 For initial context, read my blog [introducing IBM Watson for Embed].
 
-For deployment to OpenShift, see this [blog].
+For deployment to OpenShift, see this [blog]({{ "/posts/IBM-Watson-NLP-to-KServe-Modelmesh-OpenShift/" | relative_url }}).
 
 ## Introducing KServe
 
