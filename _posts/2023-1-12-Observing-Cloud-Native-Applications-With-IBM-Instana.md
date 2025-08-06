@@ -5,7 +5,7 @@ layout: post
 image: /assets/img/2023-1-12-Observing-Cloud-Native-Applications-With-IBM-Instana/robotshop.png
 ---
 
-Instana provides a real-time, automated Enterprise Observability Platform that helps Site Reliability Engineers improve the reliability and resiliency of cloud-native applications.  For initial context, read my previous blog [Introducing IBM Instana Observability].
+Instana provides a real-time, automated Enterprise Observability Platform that helps Site Reliability Engineers improve the reliability and resiliency of cloud-native applications.  For initial context, read my previous blog [Introducing IBM Instana Observability]({{ "/posts/Introducing-IBM-Instana-Observability/" | relative_url }}).
 
 ## Installing Robot-shop on OpenShift
 
