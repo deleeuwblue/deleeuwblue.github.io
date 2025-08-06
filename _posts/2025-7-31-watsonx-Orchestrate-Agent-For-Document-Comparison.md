@@ -19,13 +19,13 @@ This short series of articles provides an introduction to the latest incarnation
 * Finally, [watsonx Orchestrate Publish from ADK to SaaS](https://deleeuw.me.uk/posts/watsonx-Orchestrate-Publish-From-ADK-To-SaaS) shows how to publish a locally developed agent to a watson Orchestrate SaaS tenant, and how users can interact with it.
 
 
-## Use Case - Document Comparison Task
+## Document Comparison Use Case
 
-Our use case relates to software company who use a system integrators to contract in developers to create software components. The software company need to compare their documented in-house coding standards to those of the system integrators. This document comparison task can be automated with a watsonx Orchestrate agent.
+Our use case relates to a software company who use system integrators to contract in developers who create software components. The software company need to compare their documented in-house coding standards to those of the system integrators, and identify any missing sections. This document comparison task will be automated with a watsonx Orchestrate agent.
 
 The two documents to compare are:
-[in-house standards](https://github.com/deleeuwblue/wxo_doc_comparison_agent/blob/main/data/pythonNamingConeventions_SoftwareCompany.docx)
-[system integrator](https://github.com/deleeuwblue/wxo_doc_comparison_agent/blob/main/data/pythonNamingConeventions_SystemIntegrator.docx)
+[software company standards](https://github.com/deleeuwblue/wxo_doc_comparison_agent/blob/main/data/pythonNamingConeventions_SoftwareCompany.docx)
+[system integrator standards](https://github.com/deleeuwblue/wxo_doc_comparison_agent/blob/main/data/pythonNamingConeventions_SystemIntegrator.docx)
 
 ## Solution Approach
 
@@ -34,8 +34,8 @@ Development of the agent takes the following steps:
 * Installation of the watsonx Agent Development Kit.
 * Definition of tools:
   * document_extraction_tool - takes a Word document and converts it to markdown using a Python based tool.
-  * reference_coding_standard_tool - returns the master template for coding standards used by the software company. For our sample, the tool simply returns the document as a markdown string. In reality the latest document could be verified in a file sharing system/object storage, and be converted only when the document has changed.
-* Definition of the agent which can request the System Integrator coding standard document to compare, convert it to markdown and use AI to make a comparison.
+  * reference_coding_standard_tool - returns the master template for coding standards used by the software company. For our sample, the tool simply returns the document as a markdown string. In reality the latest document could be verified in a file sharing system/object storage, and be converted to markdown only when the document has changed.
+* Definition of the agent which can request the system integrator coding standards document, convert it to markdown and use AI to make a comparison the software company's standards.
 * Publish the agent to a production environment.
 
 ## watsonx Orchestrate Agent Development Kit
@@ -58,16 +58,16 @@ The code for this sample can be found in the [repo](https://github.com/deleeuwbl
 
 ## Building the Tools
 
-Create a folder for each tool so that each tool can have a unique `requirements.txt` file:
+Create a folder for each tool so that each can have a unique `requirements.txt` file:
 
 ```sh
 mkdir -p tools/reference_coding_standard_tool
 mkdir -p tools/reference_coding_standard_tool
 ```
 
-### reference_coding_standard_tool
+### Create Tool `reference_coding_standard_tool`
 
-This will be implemented as a Python which simply returns some hardcoded markdown as a String.
+This will be implemented as a Python tool which simply returns some hardcoded markdown as a String.
 
 In the folder `tools/reference_coding_standard_tool` add the following Python file, `reference_coding_standard_tool.py`, which implements the tool:
 
@@ -89,7 +89,7 @@ def get_coding_standards_document() -> str:
   """
 ```
 
-The important part here is the `@tool` annotation. The description define when the agent should use the tool. The function definition defines the input and output parameters which the agent must send to the tool and receive in response. Notice the Python DocStrings define the variables which is important for the agent to understand what data to gather before calling the tool.
+The important part here is the `@tool` annotation. The description defines when the agent should use the tool. The `get_coding_standards_document()` function defines the input and output parameters which the agent must send to the tool, and receive in response. Notice the Python DocStrings document the variables which is important for the agent to understand what data to gather before calling the tool.
 
 Import the tool using the ADK using this command:
 
@@ -97,7 +97,7 @@ Import the tool using the ADK using this command:
 orchestrate tools import -f tools/reference_coding_standard_tool/reference_coding_standard_tool.py -k python
 ```
 
-### document_extraction_tool
+### Create Tool `document_extraction_tool`
 
 In the folder `tools/document_extraction_tool` add the following Python file, `document_extraction_tool.py`, which implements the tool:
 
@@ -109,9 +109,7 @@ orchestrate tools import -f tools/document_extraction_tool/document_extraction_t
 
 ## Building the Agent
 
-This sample uses a single agent which can access the two tools described. The goal is for the agent to prompt for the System Integrator coding standard document, use the tool to convert it to markdown, then use generative AI to make a comparison to the In-House coding standards.
-
-This agent could be created using the Agent Builder UI, but we will use the ADK and a yaml file.
+This sample uses a single agent which can access the two tools described. The goal is for the agent to prompt for the system integrator coding standard document, use the tool to convert it to markdown, then use generative AI to make a comparison to the software company's coding standards. This agent could be created using the Agent Builder UI, but we will use the ADK and a yaml file.
 
 In the folder `agents` add the following yaml file, `coding_standards_comparison_agent.yaml`:
 
@@ -151,9 +149,21 @@ Import the agent with this command:
 orchestrate agents import -f agents/coding_standards_comparison_agent.yaml
 ```
 
+## A Flow Based Alternative
+
+An alternative approach to consider is using a watsonx Orchestrate Flow which calls tools in a pre-defined sequence, and defines a single tool to be added to the agent. The flow would:
+
+* Request system integrator coding standards document from user
+* Use a tool to convert the document to markdown
+* Retrieve the software company coding standards document using a tool
+* Call an LLM to make the comparison
+* Return the result to the agent
+
+This approach is certainly more deterministic, but at the time of writing, required flow nodes such as 'Generative AI Node' where unavailable.
+
 ## Testing the Agent
 
-TODO
+The agent builder provides a preview for testing the agent:
 
 ## Publish to a Production Environment
 
