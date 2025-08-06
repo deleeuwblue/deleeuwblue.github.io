@@ -47,7 +47,7 @@ If there are already agents and tools defined in watsonx Orchestrate, they can b
 
 The ADK offers some capabilities that are not available in the web UI :
 
-- [adding credentials](https://developer.watson-orchestrate.ibm.com/connections/overview) to tools that use OpenAPI and external agents.
+- [adding credentials](https://developer.watson-orchestrate.ibm.com/connections/overview) to tools that use OpenAPI and external agents.  This capability is available from the Settings link at the bottom of the web UI on a production installation of IBM watsonx Orchestrate, but ADK is the only way to add credentials to the Developer Edition.
 - [importing additional models](https://developer.watson-orchestrate.ibm.com/llm/managing_llm) for agent development.
 - [copilot assistance](https://developer.watson-orchestrate.ibm.com/copilot/overview) which uses AI help guide the creation of the prompts used to defined the agent's behaviour.
 - [evaluation framework](https://developer.watson-orchestrate.ibm.com/evaluate/overview) to help verify agent behaviour by comparing to a ground truth data set.
