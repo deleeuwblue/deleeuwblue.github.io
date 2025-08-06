@@ -65,7 +65,7 @@ mkdir -p tools/reference_coding_standard_tool
 mkdir -p tools/reference_coding_standard_tool
 ```
 
-### Create Tool `reference_coding_standard_tool`
+### Create Tool 'reference_coding_standard_tool'
 
 This will be implemented as a Python tool which simply returns some hardcoded markdown as a String.
 
@@ -97,7 +97,7 @@ Import the tool using the ADK using this command:
 orchestrate tools import -f tools/reference_coding_standard_tool/reference_coding_standard_tool.py -k python
 ```
 
-### Create Tool `document_extraction_tool`
+### Create Tool 'document_extraction_tool'
 
 In the folder `tools/document_extraction_tool` add the following Python file, `document_extraction_tool.py`, which implements the tool:
 
