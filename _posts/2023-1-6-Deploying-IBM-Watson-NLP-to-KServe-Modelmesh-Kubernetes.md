@@ -12,7 +12,6 @@ For initial context, read my blog [introducing IBM Watson for Embed]({{ "/posts/
 For deployment to OpenShift, see this [blog]({{ "/posts/Deploying-IBM-Watson-NLP-to-KServe-Modelmesh-OpenShift//" | relative_url }}).
 
 
-
 ## Introducing KServe
 
 [KServe](https://github.com/kserve/kserve) is a standard model inference platform on k8s.  It is built for highly scalable use cases and supports existing third party model servers and standard ML/DL model formats, or it can be extended to support additional runtimes like the Watson NLP runtime.

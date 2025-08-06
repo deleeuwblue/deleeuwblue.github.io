@@ -10,7 +10,7 @@ In this blog, I will demonstrate how to deploy the Watson for NLP Library to Ope
 For initial context, read my blog [introducing IBM Watson for Embed]({{ "/posts/Introducing-IBM-Watson-for-Embed/" | relative_url }}).
 
 
-For deployment to Kubernetes, see this [blog].
+For deployment to Kubernetes, see this [blog]({{ "/posts/Deploying-IBM-Watson-NLP-to-KServe-Modelmesh-Kubernetes/" | relative_url }}).
 
 
 ## Introducing KServe
