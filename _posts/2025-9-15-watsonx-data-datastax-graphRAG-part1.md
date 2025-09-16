@@ -71,7 +71,7 @@ For a query "what animals could be found near a capybara?", the results without 
 
 ## Tools: DataStax Unstructured
 
-In the animals data above, the meta-data was clearly defined. Accurate meta-data for each document is essential for GraphRAG as it is used to build the knowledge graph. The [Unstructured](https://docs.unstructured.io/welcome) tool enables you to build an automated pipeline to load unstructured data from systems of record, transform it using ETL processes and use custom LLM prompts to automatically generate meta-data key-value pairs.
+In the animals data above, the meta-data was clearly defined. Accurate meta-data for each document is essential for GraphRAG as it is used to build the knowledge graph. The [Unstructured](https://docs.unstructured.io/welcome) tool enables you to build an automated pipeline to load unstructured data from systems of record, transform it using ETL (Extract, Transform, Load) processes and use custom LLM prompts to automatically generate meta-data key-value pairs.
 
 ## DataStax Deployment Options
 
