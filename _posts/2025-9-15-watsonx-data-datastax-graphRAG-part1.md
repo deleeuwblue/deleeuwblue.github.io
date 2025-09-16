@@ -62,7 +62,7 @@ traversal_retriever = GraphRetriever(
 In this case, the [Eager](https://datastax.github.io/graph-rag/reference/graph_retriever/strategies/) strategy was applied which selects all discovered nodes at each traversal step. The values have the following meaning:
 
 - `start_k` - the number of similarity search results to retrieve which provide the starting point(s) for traversal
-- `k` - the number of nodes to retrieve in each level of traversal
+- `k` - the number of nodes to retrieve
 - `max_depth` - the maximum levels of traversal
 
 You can learn more at the [DataStax documentation](https://datastax.github.io/graph-rag/reference/graph_retriever/) for this Langchain component.
