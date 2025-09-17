@@ -81,4 +81,4 @@ DataStax provides a NoSQL database with vector capabilities. It has historically
 
 ## Creating a GraphRAG Agent with watsonx Orchestrate and DataStax
 
-In this section we provide more comprehensive steps to build a DataStax GraphRAG application, and incorporate this into an AI Agent using watsonx Orchestrate. See [part 2](https://deleeuw.me.uk/posts/2025-9-15-watsonx-data-datastax-graphRAG-part2/).
+In this section we provide more comprehensive steps to build a DataStax GraphRAG application, and incorporate this into an AI Agent using watsonx Orchestrate. See [part 2](https://deleeuw.me.uk/posts/watsonx-data-datastax-graphRAG-part2/).
