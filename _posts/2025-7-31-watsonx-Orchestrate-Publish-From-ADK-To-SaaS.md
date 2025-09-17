@@ -65,4 +65,5 @@ Direct your browser to ```localhost:1996``` and the webchat UI will render:
 
 There are various options to customise the webChatUI for layout and colour. See the [documentation](https://www.ibm.com/docs/en/watsonx/watson-orchestrate/base?topic=agents-using-webchat) for more details.
 
+
 Note the webChatUI is not providing authentication, this is something the hosting website would take care of. There are steps in the documentation for passing data between client and server securely, but that's something that will be covered in another blog.
