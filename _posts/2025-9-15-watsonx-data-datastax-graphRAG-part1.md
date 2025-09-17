@@ -30,7 +30,7 @@ Given documents which are clearly and directly related, it makes sense to ensure
 
 However, the blogs from DataStax explain how constructing, maintaining and navigating these knowledge graphs can be difficult. It can involve manually extracting structured relationships from the documents and storing them to a dedicated graph database. The blogs advocate recent advancements which simplify these workflows using LLM tools to format documents into graph-ready data, and code libraries which dynamically perform graph-based queries over vector stores where the documents include *meta-data* representing relationships, thus eliminating the need for dedicated graph databases. The next section provides a simple example.
 
-## Tools: LangChain Retriever
+## LangChain Retriever
 
 The [LangChain Retriever](https://python.langchain.com/docs/integrations/retrievers/graph_rag/?vector-store=astra-db) combines vector and knowledge graph traversal and is compatible with DataStax.
 
@@ -69,7 +69,7 @@ You can learn more at the [DataStax documentation](https://datastax.github.io/gr
 
 For a query "what animals could be found near a capybara?", the results without the knowledge graph include animals such as guinea pigs and boars. With the addition of the `GraphRetriever` approach, the results are improved as all the animals share a `habitat` meta-data value of `wetlands`.
 
-## Tools: DataStax Unstructured
+## DataStax Unstructured
 
 In the animals data above, the meta-data was clearly defined. Accurate meta-data for each document is essential for GraphRAG as it is used to build the knowledge graph. The [Unstructured](https://docs.unstructured.io/welcome) tool enables you to build an automated pipeline to load unstructured data from systems of record, transform it using ETL (Extract, Transform, Load) processes and use custom LLM prompts to automatically generate meta-data key-value pairs.
 
@@ -80,7 +80,5 @@ In the animals data above, the meta-data was clearly defined. Accurate meta-data
 DataStax provides a NoSQL database with vector capabilities. It has historically been available in a couple of form-factors for on-premises deployment (HCD/DSE), or as SaaS via [Astra](https://accounts.datastax.com/). It is possible to provision a free database using Astra if you wish to try out GraphRAG.
 
 ## Creating a GraphRAG Agent with watsonx Orchestrate and DataStax
-
-TODO BRIAN
 
 In this section we provide more comprehensive steps to build a DataStax GraphRAG application, and incorporate this into an AI Agent using watsonx Orchestrate. See [part 2](https://deleeuw.me.uk/posts/2025-9-15-watsonx-data-datastax-graphRAG-part2/).

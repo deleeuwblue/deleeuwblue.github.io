@@ -11,7 +11,4 @@ DataStax's distributed database and vector capabilities are now [integrated into
 
 The application is based on this [sample](https://datastax.github.io/graph-rag/examples/movie-reviews-graph-rag/#the-strategy).
 
-- Create API endpoint
-- Define a watsonx Orchestrate Tool Flow
-- Define a watsonx Orchestrate Agent
-- Test the GraphRAG application
+Content coming soon.
