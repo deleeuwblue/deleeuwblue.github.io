@@ -28,4 +28,7 @@ package-lock.json
 # Misc
 _sass/vendors
 assets/js/dist
+
+**/.DS_Store
 deleeuwScratch/*
+
