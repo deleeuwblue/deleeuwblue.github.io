@@ -5,7 +5,7 @@ layout: post
 author: [adamdeleeuw, brianinnes]
 image: /assets/img/2025-7-31-watsonx-Orchestrate-Agent-Document-Comparison/watsonxassistant_lifecycle_1x1_16x9.jpeg
 ---
-watsonx Orchestrate includes a comprehensive [REST API](https://developer.watson-orchestrate.ibm.com/apis/orchestrate-agent/chat-with-orchestrate-assistant) which can be used to build your own chat UI. In this blog you'll learn how to do this for an agent deployed the watsonx Orchestrate Draft or Live environments.
+watsonx Orchestrate includes a comprehensive [REST API](https://developer.watson-orchestrate.ibm.com/apis/orchestrate-agent/chat-with-orchestrate-assistant) which can be used to build your own chat UI. In this blog you'll learn how to use REST APIs to chat with an agent deployed the watsonx Orchestrate Draft or Live environments.
 
 The steps are for IBM Cloud. They will be similar for watsonx Orchestrate on AWS, apart from steps to generate authentication tokens.
 
@@ -39,9 +39,9 @@ Alternatively, use:
 orchestrate agents list
 ```
 
-Make a note your agent's "id".
+Make a note of the agent's "id".
 
-## Determine all environments for your agent
+## List all environments for your agent
 
 ```sh
 curl --request GET \
@@ -49,7 +49,9 @@ curl --request GET \
   --header 'Authorization: Bearer <TOKEN>'
 ```
 
-If your agent is deployed to both Draft and Live, there will be two environments listed, each with a id. It's really important to include this when chatting via REST API (or the embedded web client), otherwise you will chat with the unpublished Draft agent by default.
+If your agent is deployed to both Draft and Live, there will be two environments listed, each with an "id". It's really important to include this "id" when chatting via REST API (or the embedded web client), otherwise you will chat with the unpublished Draft agent by default.
+
+Make a note of the environment's "id".
 
 ## Chat with agent
 
