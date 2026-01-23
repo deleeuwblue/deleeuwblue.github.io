@@ -5,9 +5,13 @@ layout: post
 author: [adamdeleeuw, brianinnes]
 image: /assets/img/2025-7-31-watsonx-Orchestrate-Agent-Document-Comparison/watsonxassistant_lifecycle_1x1_16x9.jpeg
 ---
-watsonx Orchestrate includes a comprehensive [REST API](https://developer.watson-orchestrate.ibm.com/apis/orchestrate-agent/chat-with-orchestrate-assistant) which can be used to build your own chat UI. In this blog you'll learn how to use REST APIs to chat with an agent deployed the watsonx Orchestrate Draft or Live environments.
+watsonx Orchestrate includes a comprehensive [REST API](https://developer.watson-orchestrate.ibm.com/apis/orchestrate-agent/chat-with-orchestrate-assistant) which can be used to build your own chat UI. In this blog you'll learn how to use REST APIs to chat with an agent, and how differentiate between agents in multiple environments.
 
-The steps are for IBM Cloud. They will be similar for watsonx Orchestrate on AWS, apart from steps to generate authentication tokens.
+watsonx Orchestrate includes a [Draft and Live environment](https://www.ibm.com/docs/en/watsonx/watson-orchestrate/base?topic=building-customizing-agents#the-role-of-environments-in-agent-building). This enables you to develop and test an agent before publishing the changes to your users. In the Agent Builder UI, each agent features a green 'live' tile to indicate whether it is published to the Live environment. In the Agent Preview pane, a blue 'Deploy' button indicates that changes are pending publication in the Draft environment. Making a deployment copies the Draft versions of the agent configuration, tools, knowledge etc. A deployment can also be triggered (and rolled back) via the orchestrate CLI.
+
+![liveDeploy](/assets/img/2026-01-23-watsonx-Orchestrate-chat-via-API/liveDeploy.png)
+
+The steps below were tested with IBM Cloud. They will be similar for watsonx Orchestrate on AWS, apart from steps to generate authentication tokens.
 
 ## Pre-requisites
 
