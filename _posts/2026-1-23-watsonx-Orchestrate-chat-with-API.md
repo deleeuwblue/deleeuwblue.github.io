@@ -5,7 +5,7 @@ layout: post
 author: [adamdeleeuw, brianinnes]
 image: /assets/img/2025-7-31-watsonx-Orchestrate-Agent-Document-Comparison/watsonxassistant_lifecycle_1x1_16x9.jpeg
 ---
-watsonx Orchestrate includes a comprehensive [REST API](https://developer.watson-orchestrate.ibm.com/apis/orchestrate-agent/chat-with-orchestrate-assistant) which can be used to build your own chat UI. In this blog you'll learn how to use REST APIs to chat with an agent, and how differentiate between agents in multiple environments.
+watsonx Orchestrate includes a comprehensive [REST API](https://developer.ibm.com/apis/catalog/watsonorchestrate--custom-assistants/Introduction) which can be used to build your own chat UI. In this blog you'll learn how to use REST APIs to chat with an agent, and how differentiate between agents in multiple environments.
 
 watsonx Orchestrate includes a [Draft and Live environment](https://www.ibm.com/docs/en/watsonx/watson-orchestrate/base?topic=building-customizing-agents#the-role-of-environments-in-agent-building). This enables you to develop and test an agent before publishing the changes to your users. In the Agent Builder UI, each agent features a green 'live' tile to indicate whether it is published to the Live environment. In the Agent Preview pane, a blue 'Deploy' button indicates that changes are pending publication in the Draft environment. Making a deployment copies the Draft versions of the agent configuration, tools, knowledge etc. A deployment can also be triggered (and rolled back) via the orchestrate CLI.
 
@@ -75,3 +75,5 @@ On subsequent requests, the --data should include a thread_id from the previous 
 ```sh
 --data '{"message": {"role": "user", "content": "what is the top tourist attraction in London"}, "agent_id": "<AGENT_ID>", "thread_id": "<THREAD_ID>", "environment_id": "<ENVIRONMENT_ID>"}'
 ```
+
+Note watsonx Orchestrate includes multiple alternative APIs to invoke agents, including /chat/completions which is very similar to the [OpenAI /chat/completions](https://platform.openai.com/docs/api-reference/chat) endpoint.
