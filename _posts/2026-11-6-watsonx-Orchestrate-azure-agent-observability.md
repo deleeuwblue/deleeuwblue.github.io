@@ -1,6 +1,6 @@
 ---
 title: watsonx Orchestrate Azure Agent Observability
-date: 2026-01-23 09:03:00 +/-0000
+date: 2026-11-6 09:03:00 +/-0000
 layout: post
 author: [adamdeleeuw]
 image: /assets/img/2026-11-6-watsonx-Orchestrate-azure-agent-observability/banner.png
