@@ -32,3 +32,5 @@ assets/js/dist
 **/.DS_Store
 deleeuwScratch/*
 
+.bob/mcp.json
+assets/img/.DS_Store
