@@ -224,12 +224,12 @@ curl -X POST "https://adamdeleeuw.services.ai.azure.com/api/projects/proj-defaul
 
 From the external agent definition UI, select View Analytics.
 
-![a2a](/assets/img/2026-11-6-watsonx-Orchestrate-azure-agent-observability/view_analytics.png)
+![a2a](/assets/img/2026-11-6-watsonx-Orchestrate-azure-agent-observability/view-analytics.png)
 
 Explore the telemetry captured from the external agent, including the recent conversation. You may need to wait 1-2 minutes for the data to arrive.
 
-![a2a](/assets/img/2026-11-6-watsonx-Orchestrate-azure-agent-observability/view_analytics-1.png)
+![a2a](/assets/img/2026-11-6-watsonx-Orchestrate-azure-agent-observability/view-analytics-1.png)
 
-![a2a](/assets/img/2026-11-6-watsonx-Orchestrate-azure-agent-observability/view_analytics-2.png)
+![a2a](/assets/img/2026-11-6-watsonx-Orchestrate-azure-agent-observability/view-analytics-2.png)
 
-![a2a](/assets/img/2026-11-6-watsonx-Orchestrate-azure-agent-observability/view_analytics-3.png)
+![a2a](/assets/img/2026-11-6-watsonx-Orchestrate-azure-agent-observability/view-analytics-3.png)
