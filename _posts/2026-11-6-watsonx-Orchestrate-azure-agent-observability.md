@@ -149,7 +149,7 @@ Verify the agent has an A2A endpoint in the Foundry UI.
 
 ![a2a](/assets/img/2026-11-6-watsonx-Orchestrate-azure-agent-observability/a2a.png)
 
-Use the responses endpoint to test the agent with cURL.
+Use the responses (or A2A) endpoint to test the agent with cURL.
 
 ```sh
 TOKEN=$(az account get-access-token --resource https://ai.azure.com/ --query accessToken -o tsv)
