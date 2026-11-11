@@ -35,7 +35,7 @@ In [Azure Foundry](https://ai.azure.com/) find your API key. You should also mak
 
 ![foundry1](/assets/img/2026-11-6-watsonx-Orchestrate-azure-agent-observability/foundry1.png)
 
-Click `Start from code` to get started with building an agent for your platform. Tip: if the `Build an Agent` button is greyed out, you will hit problems later even if starting from code. Therefore you need to ensure your Azure user has the appropriate [Foundry role](https://learn.microsoft.com/en-us/azure/foundry/concepts/rbac-foundry?tabs=owner%2Cfoundry#permissions-for-each-built-in-role).
+Click `Start from code` to get started with building an agent for your platform. Tip: if the `Build an Agent` button is greyed out, you will hit problems later even if starting from code. Therefore you need to ensure your Azure user has the appropriate [Foundry role](https://learn.microsoft.com/en-us/azure/foundry/concepts/rbac-foundry?tabs=owner%2Cfoundry#permissions-for-each-built-in-role). My user is assigned 'Foundry User' role.
 
 I ran the following commands:
 
