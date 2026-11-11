@@ -165,11 +165,11 @@ From the UI, use AI Gateway->Platforms to configure the connection to Azure. The
 
 ![a2a](/assets/img/2026-11-6-watsonx-Orchestrate-azure-agent-observability/scan_azure.png)
 
-When importing the agent, you can choose 'Use and Observability' or 'Observability only'.
+When registering the agent, you can choose 'Use and Observability' or 'Observability only'.
 
 ![a2a](/assets/img/2026-11-6-watsonx-Orchestrate-azure-agent-observability/discoverAgent2.png)
 
-In our scenario, the agent will not be used directly via watsonx Orchestrate, so choose 'Observability only'. Note if you did want to chat directly with the agent using watsonx Orchestrate API, you would need to associate a Connection with the external agent.
+In our scenario, the agent will not be used directly via watsonx Orchestrate, so choose 'Observability only'. Note if you did want to chat directly with the agent using watsonx Orchestrate API (or use it as a native agent collaborator), you would need to associate a Connection with the external agent.
 
 Take note of the external agent's ID.
 
