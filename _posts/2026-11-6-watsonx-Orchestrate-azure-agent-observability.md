@@ -58,7 +58,7 @@ azd ai agent init -m https://github.com/microsoft-foundry/foundry-samples/blob/m
 
 ## Optionally, enable A2A support
 
-An A2A endpoint is not necessary for observing agents with Deployment Option 1, i.e. where the agent is invoked directly not via watsonx Orchestrate. However, in case you want to use Deployment Option 2, one communication option is to use A2A.
+An A2A endpoint is not necessary for observing external agents with watsonx Orchestrate. However, you may wish to enable A2A anyway, for users interacting directly with the agent using Deployment Option 2.
 
 This can be accomplished by editing the azure.yaml with the addition of the `agentEndpoint` and `agentCard` sections, or you can deploy first then enable A2A in the Foundry UI.
 
