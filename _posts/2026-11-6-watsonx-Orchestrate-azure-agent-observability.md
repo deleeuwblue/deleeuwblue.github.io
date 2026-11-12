@@ -11,10 +11,12 @@ Telemetry for external agents depends on how they are invoked. Requests routed t
 
 In the image below, the external agent is registered, and the application uses watsonx orchestrate API to invoke the agent. With this setup, watsonx orchestrate API automatically captures telemetry data. In addition, it's possible to control the agent response with policies, for example a policy to block PII can be added as a control to the agent.
 
+Deployment Option 1:
 ![deploy option 1](/assets/img/2026-11-6-watsonx-Orchestrate-azure-agent-observability/option1.png)
 
 In the image below, the external agent is registered, but the application uses Azure API to invoke the agent. In this scenario the agent must be configured to emit telemetry data to the watsonx Orchestrate control plane.
 
+Deployment Option 2:
 ![deploy option 2](/assets/img/2026-11-6-watsonx-Orchestrate-azure-agent-observability/option2.png)
 
 The [watsonx Orchestrate documentation](https://www.ibm.com/docs/en/watsonx/watson-orchestrate/base?topic=gateway-enabling-observability-external-agents) describes how to accomplish this for various agent hosting platforms. For Azure Foundry, there are different approaches for prompt agents or hosted agents. 
@@ -53,7 +55,12 @@ Clone a Python sample agent. This uses the Foundry SDK to implement a custom age
 ```sh
 azd ai agent init -m https://github.com/microsoft-foundry/foundry-samples/blob/main/samples/python/hosted-agents/bring-your-own/responses/hello-world/azure.yaml --project-id /subscriptions/<subID>/resourceGroups/<rgID>/providers/Microsoft.CognitiveServices/accounts/adamdeleeuw/projects/proj-default
 ```
-Modify the sample agent to support the A2A protocol. This can be accomplished by editing the azure.yaml with the addition of the `agentEndpoint` and `agentCard` sections, or you can deploy first then enable A2A in the Foundry UI.
+
+## Optionally, enable A2A support
+
+An A2A endpoint is not necessary for observing agents with Deployment Option 1, i.e. where the agent is invoked directly not via watsonx Orchestrate. However, in case you want to use Deployment Option 2, one communication option is to use A2A.
+
+This can be accomplished by editing the azure.yaml with the addition of the `agentEndpoint` and `agentCard` sections, or you can deploy first then enable A2A in the Foundry UI.
 
 ```yaml
 # yaml-language-server: $schema=https://raw.githubusercontent.com/Azure/azure-dev/main/schemas/v1.0/azure.yaml.json
@@ -149,6 +156,8 @@ Verify the agent has an A2A endpoint in the Foundry UI.
 
 ![a2a](/assets/img/2026-11-6-watsonx-Orchestrate-azure-agent-observability/a2a.png)
 
+## Test the agent
+
 Use the responses (or A2A) endpoint to test the agent with cURL.
 
 ```sh
@@ -160,9 +169,9 @@ curl -X POST "https://adamdeleeuw.services.ai.azure.com/api/projects/proj-defaul
   -d '{"input": "What is the most popular car manufacturer in the USA?"}'
 ```
 
-## Register the external agent in watsonx Orchestrate
+## Import and register the external agent for observability
 
-This can be done via the UI or the watsonx Orchestrate ADK CLI.
+This can be done via the watsonx Orchestrate UI or ADK CLI.
 
 From the UI, use AI Gateway->Platforms to configure the connection to Azure. Then scan and register the external agent.
 
