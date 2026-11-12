@@ -1,6 +1,6 @@
 ---
 title: watsonx Orchestrate Azure Prompt Agent Observability
-date: 2026-11-6 09:03:00 +/-0000
+date: 2026-11-11 09:03:00 +/-0000
 layout: post
 author: [adamdeleeuw]
 image: /assets/img/2026-11-11-watsonx-Orchestrate-azure-prompt-agent-observability/banner.png
